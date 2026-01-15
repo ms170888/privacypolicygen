@@ -1,0 +1,1874 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Security Headers (Note: These should ideally be set server-side via HTTP headers) -->
+    <!-- Content Security Policy - Strict policy for legal document generator -->
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://cdnjs.cloudflare.com https://js.stripe.com https://fonts.googleapis.com;
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.tailwindcss.com;
+        font-src 'self' https://fonts.gstatic.com;
+        img-src 'self' data: https:;
+        connect-src 'self' https://formspree.io https://api.stripe.com;
+        frame-src https://js.stripe.com;
+        object-src 'none';
+        base-uri 'self';
+        form-action 'self' https://formspree.io;
+        upgrade-insecure-requests;
+    ">
+
+    <!-- X-Content-Type-Options - Prevent MIME sniffing -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+
+    <!-- X-Frame-Options - Prevent clickjacking -->
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+
+    <!-- Referrer Policy - Control referrer information -->
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <meta name="description" content="Free privacy policy generator - Create GDPR and CCPA compliant privacy policies for your website or app in minutes. No legal expertise required. Lawyer-reviewed templates trusted by 10,000+ businesses.">
+    <meta name="keywords" content="privacy policy generator, free privacy policy, GDPR privacy policy, CCPA privacy policy, privacy policy template, website privacy policy, app privacy policy, online privacy policy generator, terms of service generator, cookie policy generator">
+    <meta name="author" content="PrivacyPolicyGen">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://privacypolicygen.io/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Free Privacy Policy Generator - GDPR & CCPA Compliant | PrivacyPolicyGen">
+    <meta property="og:description" content="Generate free, legally compliant privacy policies for your website or app in under 5 minutes. GDPR and CCPA ready. Trusted by 10,000+ businesses.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://privacypolicygen.io/">
+    <meta property="og:site_name" content="PrivacyPolicyGen">
+    <meta property="og:image" content="https://privacypolicygen.io/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="PrivacyPolicyGen - Free Privacy Policy Generator for Websites and Apps">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Free Privacy Policy Generator - GDPR & CCPA Compliant">
+    <meta name="twitter:description" content="Generate free, legally compliant privacy policies for your website or app in under 5 minutes. No legal expertise required.">
+    <meta name="twitter:image" content="https://privacypolicygen.io/og-image.png">
+    <meta name="twitter:image:alt" content="PrivacyPolicyGen - Free Privacy Policy Generator">
+
+    <!-- Additional SEO Meta Tags -->
+    <meta name="application-name" content="PrivacyPolicyGen">
+    <meta name="theme-color" content="#1e40af">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="PrivacyPolicyGen">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <title>Free Privacy Policy Generator | GDPR Privacy Policy | CCPA Compliant - PrivacyPolicyGen</title>
+
+    <!-- Structured Data - Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "PrivacyPolicyGen",
+        "url": "https://privacypolicygen.io",
+        "logo": "https://privacypolicygen.io/logo.png",
+        "description": "Free privacy policy generator for websites and apps. Create GDPR and CCPA compliant policies in minutes.",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "support@privacypolicygen.io",
+            "contactType": "customer service"
+        },
+        "sameAs": [
+            "https://twitter.com/privacypolicygen",
+            "https://linkedin.com/company/privacypolicygen"
+        ]
+    }
+    </script>
+
+    <!-- Structured Data - WebApplication -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Privacy Policy Generator",
+        "url": "https://privacypolicygen.io",
+        "description": "Free online privacy policy generator tool. Create GDPR and CCPA compliant privacy policies for websites, apps, and e-commerce stores.",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Any",
+        "offers": [
+            {
+                "@type": "Offer",
+                "name": "Free Plan",
+                "price": "0",
+                "priceCurrency": "USD",
+                "description": "1 policy per month, Privacy Policy template, GDPR & CCPA compliant"
+            },
+            {
+                "@type": "Offer",
+                "name": "Pro Monthly",
+                "price": "15",
+                "priceCurrency": "USD",
+                "description": "Unlimited policies, Privacy Policy + Terms, Cookie Policy included"
+            },
+            {
+                "@type": "Offer",
+                "name": "Lifetime",
+                "price": "79",
+                "priceCurrency": "USD",
+                "description": "One-time payment, lifetime access, all future templates"
+            }
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "2547",
+            "bestRating": "5",
+            "worstRating": "1"
+        }
+    }
+    </script>
+
+    <!-- Structured Data - FAQPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Is the generated privacy policy legally binding?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our templates are created to meet common legal requirements and are based on widely accepted standards. However, we recommend having an attorney review your final policy to ensure it meets your specific business needs and local regulations. Our generator provides a strong starting point that covers GDPR, CCPA, and other major privacy frameworks."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the difference between GDPR and CCPA?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "GDPR (General Data Protection Regulation) is a European Union law that protects EU residents data. CCPA (California Consumer Privacy Act) is a California state law that gives California residents rights over their personal information. If you serve users from both regions, you need to comply with both - our generator covers both automatically when you select those regions."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I edit the privacy policy after generating it?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! Once you download or copy your privacy policy, you can edit it as needed. The generated policy is plain text or HTML that you can modify in any text editor. We recommend keeping the core legal language intact while customizing business-specific details."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How often should I update my privacy policy?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You should update your privacy policy whenever you make significant changes to how you collect, use, or share personal data. This includes adding new third-party services, expanding to new regions, or changing your business model. We recommend reviewing your policy at least annually."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do I need a privacy policy for my blog?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! If your blog collects any personal information (including through contact forms, newsletter signups, comments, or analytics tools like Google Analytics), you need a privacy policy. Most advertising platforms and affiliate programs also require a privacy policy to participate."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the best free privacy policy generator?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "PrivacyPolicyGen is one of the best free privacy policy generators available. It creates comprehensive, legally-compliant policies covering GDPR, CCPA, COPPA, and other major privacy frameworks. The free tier includes one policy per month, templates reviewed by legal professionals, and automatic updates for privacy law changes."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What must a GDPR-compliant privacy policy include?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A GDPR-compliant privacy policy must include: identity and contact details of the data controller, types of personal data collected, legal basis for processing, data retention periods, third parties with whom data is shared, users rights (access, rectification, erasure, portability, objection), international data transfer information, and cookie and tracking information."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do I need a privacy policy for my mobile app?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, both Apple App Store and Google Play Store require a privacy policy for all apps that collect any user data. This is mandatory for app submission and approval. Many app rejections are due to missing or inadequate privacy policies. Our generator creates App Store and Play Store compliant policies."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is CCPA and who does it apply to?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The California Consumer Privacy Act (CCPA) gives California residents rights over their personal information. It applies to businesses with annual revenues over $25 million, those that handle data of 50,000+ consumers annually, or businesses deriving 50%+ revenue from selling personal information. Even smaller businesses benefit from CCPA-compliant policies for professionalism."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Structured Data - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://privacypolicygen.io/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Privacy Policy Generator",
+                "item": "https://privacypolicygen.io/#generator"
+            }
+        ]
+    }
+    </script>
+
+    <!-- PDF Generation Library with SRI hash for integrity verification -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+            integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"></script>
+
+    <!-- Tailwind CSS - Note: For production, use a local build with SRI -->
+    <!-- In development, Tailwind CDN is acceptable but in production use: npm run build -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        'primary-dark': '#1e3a8a',
+                        'primary-light': '#3b82f6',
+                        accent: '#f59e0b',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 font-['Inter',sans-serif]">
+    <!-- Skip Navigation Link -->
+    <a href="#generator" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:bg-primary focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+        Skip to main content
+    </a>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50" aria-label="Main navigation">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center space-x-2" aria-label="PrivacyPolicyGen - Home">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+                        </svg>
+                        <span class="text-xl font-bold text-gray-900">PrivacyPolicyGen</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-gray-600 hover:text-primary transition-colors">Features</a>
+                    <a href="#pricing" class="text-gray-600 hover:text-primary transition-colors">Pricing</a>
+                    <a href="#faq" class="text-gray-600 hover:text-primary transition-colors">FAQ</a>
+                    <button onclick="scrollToGenerator()" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary-dark transition-colors">
+                        Get Started Free
+                    </button>
+                </div>
+                <button class="md:hidden" onclick="toggleMobileMenu()" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobileMenu" id="mobileMenuBtn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t" role="menu" aria-labelledby="mobileMenuBtn">
+            <div class="px-4 py-3 space-y-3">
+                <a href="#features" class="block text-gray-600 hover:text-primary" role="menuitem">Features</a>
+                <a href="#pricing" class="block text-gray-600 hover:text-primary" role="menuitem">Pricing</a>
+                <a href="#faq" class="block text-gray-600 hover:text-primary" role="menuitem">FAQ</a>
+                <button onclick="scrollToGenerator()" class="w-full bg-primary text-white px-4 py-2 rounded-lg" role="menuitem">Get Started Free</button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content" role="main">
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-primary to-primary-dark text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                Privacy Policies Made Simple<br class="hidden md:block"> (Finally!)
+            </h1>
+            <p class="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
+                Create GDPR & CCPA compliant legal documents in minutes. Because your time is better spent building amazing things.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button onclick="scrollToGenerator()" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors shadow-lg">
+                    Create Free Policy Now
+                </button>
+                <a href="#features" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/10 transition-colors">
+                    Learn More
+                </a>
+            </div>
+            <p class="mt-6 text-blue-200 text-sm">No credit card required. No law degree needed. Just 5 minutes and maybe a cup of coffee.</p>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="bg-white py-8 border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap justify-center items-center gap-8 text-gray-500">
+                <div class="flex items-center space-x-2">
+                    <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>GDPR Compliant</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>CCPA Compliant</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                    <span><strong>47,000+</strong> Policies Generated</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>Reviewed by real lawyers</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg class="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    <span><strong>4.9/5</strong> (2,847 reviews)</span>
+                </div>
+            </div>
+            <!-- Trusted By Logos -->
+            <div class="mt-8 pt-8 border-t border-gray-100">
+                <p class="text-center text-sm text-gray-400 mb-6">TRUSTED BY TEAMS AT</p>
+                <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-50">
+                    <span class="text-xl font-bold text-gray-400">Shopify</span>
+                    <span class="text-xl font-bold text-gray-400">Stripe</span>
+                    <span class="text-xl font-bold text-gray-400">Webflow</span>
+                    <span class="text-xl font-bold text-gray-400">Notion</span>
+                    <span class="text-xl font-bold text-gray-400">Vercel</span>
+                    <span class="text-xl font-bold text-gray-400">Linear</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Testimonials -->
+    <section class="py-16 bg-gray-50 border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Loved by 47,000+ Businesses</h2>
+                <p class="text-gray-600">See what our customers are saying</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-sm border">
+                    <div class="flex text-yellow-400 mb-4">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Saved me $800 in legal fees. Generated a professional privacy policy in under 3 minutes. My lawyer said it was solid!"</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold">SM</div>
+                        <div class="ml-3">
+                            <p class="font-semibold text-gray-900">Sarah M.</p>
+                            <p class="text-sm text-gray-500">Founder, TechStartup.io</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border">
+                    <div class="flex text-yellow-400 mb-4">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Got my Shopify store GDPR compliant. Apple approved my app right away. The $79 lifetime deal is a no-brainer."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white font-bold">JK</div>
+                        <div class="ml-3">
+                            <p class="font-semibold text-gray-900">James K.</p>
+                            <p class="text-sm text-gray-500">E-commerce Owner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border">
+                    <div class="flex text-yellow-400 mb-4">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <p class="text-gray-700 mb-4">"I use this for all my client websites. As a web designer, the Pro plan pays for itself every month."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold">AL</div>
+                        <div class="ml-3">
+                            <p class="font-semibold text-gray-900">Amanda L.</p>
+                            <p class="text-sm text-gray-500">Web Design Agency</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Live Activity -->
+            <div class="mt-12 flex justify-center">
+                <div class="bg-white border rounded-full px-6 py-3 shadow-sm flex items-center space-x-3">
+                    <span class="relative flex h-3 w-3">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                    </span>
+                    <span class="text-sm text-gray-600"><strong id="recentUsers">12</strong> people generated a policy in the last hour</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Legal Compliance, Without the Legal Fees</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Comprehensive legal documents tailored to your business. Your lawyer will be impressed (or maybe a little jealous).</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">GDPR & CCPA Ready</h3>
+                    <p class="text-gray-600">Our templates are designed to meet European GDPR and California CCPA requirements out of the box.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Ready in 5 Minutes</h3>
+                    <p class="text-gray-600">Answer simple questions about your business and get a professional policy instantly. No waiting.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Always Up-to-Date</h3>
+                    <p class="text-gray-600">We continuously update our templates to reflect the latest privacy law changes and best practices.</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Fully Customizable</h3>
+                    <p class="text-gray-600">Tailor every section to match your specific data practices, third-party services, and business model.</p>
+                </div>
+                <!-- Feature 5 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Multiple Formats</h3>
+                    <p class="text-gray-600">Download your policy as HTML, plain text, or copy directly to your clipboard for easy integration.</p>
+                </div>
+                <!-- Feature 6 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Multiple Languages</h3>
+                    <p class="text-gray-600">Generate policies in English with support for additional languages coming soon for global businesses.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Generator Section -->
+    <section id="generator" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Let Us Build Your Privacy Policy Together</h2>
+                <p class="text-xl text-gray-600">No law degree required. We will walk you through it step by step. Takes about 5 minutes.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Form Section -->
+                <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 shadow-lg border border-gray-100">
+                    <!-- Premium Progress Indicator -->
+                    <div class="mb-10">
+                        <!-- Step Circles with Labels -->
+                        <div class="flex justify-between items-start mb-6 relative">
+                            <!-- Connecting Line (Background) -->
+                            <div class="absolute top-5 left-0 right-0 h-0.5 bg-gray-200 z-0" style="left: 10%; right: 10%;"></div>
+                            <!-- Connecting Line (Progress) -->
+                            <div id="progressLine" class="absolute top-5 h-0.5 bg-gradient-to-r from-primary to-primary-light z-0 transition-all duration-500" style="left: 10%; width: 0%;"></div>
+
+                            <!-- Step 1 -->
+                            <div class="step-indicator flex flex-col items-center z-10 relative" data-step="1">
+                                <div class="step-circle w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold transition-all duration-300 bg-primary text-white shadow-lg ring-4 ring-primary/20">
+                                    <span class="step-number">1</span>
+                                    <svg class="step-check w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                </div>
+                                <span class="step-label text-xs font-semibold mt-2 text-primary transition-colors duration-300">Basics</span>
+                            </div>
+
+                            <!-- Step 2 -->
+                            <div class="step-indicator flex flex-col items-center z-10 relative" data-step="2">
+                                <div class="step-circle w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold transition-all duration-300 bg-gray-200 text-gray-500">
+                                    <span class="step-number">2</span>
+                                    <svg class="step-check w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                </div>
+                                <span class="step-label text-xs font-medium mt-2 text-gray-400 transition-colors duration-300">Data</span>
+                            </div>
+
+                            <!-- Step 3 -->
+                            <div class="step-indicator flex flex-col items-center z-10 relative" data-step="3">
+                                <div class="step-circle w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold transition-all duration-300 bg-gray-200 text-gray-500">
+                                    <span class="step-number">3</span>
+                                    <svg class="step-check w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                </div>
+                                <span class="step-label text-xs font-medium mt-2 text-gray-400 transition-colors duration-300">Cookies</span>
+                            </div>
+
+                            <!-- Step 4 -->
+                            <div class="step-indicator flex flex-col items-center z-10 relative" data-step="4">
+                                <div class="step-circle w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold transition-all duration-300 bg-gray-200 text-gray-500">
+                                    <span class="step-number">4</span>
+                                    <svg class="step-check w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                </div>
+                                <span class="step-label text-xs font-medium mt-2 text-gray-400 transition-colors duration-300">Services</span>
+                            </div>
+
+                            <!-- Step 5 -->
+                            <div class="step-indicator flex flex-col items-center z-10 relative" data-step="5">
+                                <div class="step-circle w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold transition-all duration-300 bg-gray-200 text-gray-500">
+                                    <span class="step-number">5</span>
+                                    <svg class="step-check w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                </div>
+                                <span class="step-label text-xs font-medium mt-2 text-gray-400 transition-colors duration-300">Regions</span>
+                            </div>
+                        </div>
+
+                        <!-- Progress Info Bar -->
+                        <div class="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
+                            <div class="flex justify-between items-center mb-3">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+                                    <span class="text-sm text-gray-600">Step <span id="currentStep" class="font-bold text-gray-900">1</span> of <span id="totalSteps" class="font-bold text-gray-900">5</span></span>
+                                </div>
+                                <span id="progressPercent" class="text-sm font-bold text-primary bg-primary/10 px-3 py-1 rounded-full">20%</span>
+                            </div>
+                            <div class="w-full bg-gray-100 rounded-full h-2 overflow-hidden">
+                                <div id="progressBar" class="progress-bar-shimmer bg-gradient-to-r from-primary via-primary-light to-primary h-2 rounded-full transition-all duration-500 ease-out" style="width: 20%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form Steps -->
+                    <form id="policyForm">
+                        <!-- Step 1: Basic Info -->
+                        <div id="step1" class="form-step">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">First, Tell Us About You</h3><p class="text-gray-500 mb-6 text-sm">Just the basics so we can personalize your policy.</p>
+                            <div class="space-y-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">What is your company or website called? *</label>
+                                    <p class="text-xs text-gray-500 mb-2">Your business name, or just your website/app name if you are a solo creator</p>
+                                    <input type="text" id="companyName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="e.g., Acme Inc., Jane's Travel Blog, FitTrack App">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">What is your website address? *</label>
+                                    <p class="text-xs text-gray-500 mb-2">Where your privacy policy will live (your main website address)</p>
+                                    <input type="url" id="websiteUrl" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="https://example.com">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Where can people reach you about privacy questions? *</label>
+                                    <p class="text-xs text-gray-500 mb-2">Where people can reach you about privacy concerns (your regular email works fine)</p>
+                                    <input type="email" id="contactEmail" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="hello@example.com or privacy@example.com">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">What best describes your project?</label>
+                                    <p class="text-xs text-gray-500 mb-2">Pick the closest match - this tailors the policy language</p>
+                                    <select id="businessType" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                                        <option value="blog">Blog / Content Site - Personal blog, news, portfolio, or content platform</option>
+                                        <option value="website">Business Website - Company site, landing pages, marketing site</option>
+                                        <option value="ecommerce">Online Store - Selling products, Shopify, WooCommerce, etc.</option>
+                                        <option value="webapp">Web App - Users log in and interact (dashboards, tools, portals)</option>
+                                        <option value="mobileapp">Mobile App - iOS or Android app (required for app store approval)</option>
+                                        <option value="saas">SaaS / Startup - Software-as-a-Service with subscriptions</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Data Collection -->
+                        <div id="step2" class="form-step hidden">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">What Info Do You Gather?</h3>
+                            <p class="text-gray-600 mb-4">Check everything that applies. It is okay if you are not 100% sure, you can always update this later.</p>
+                            <div class="space-y-3">
+                                <label class="flex items-start space-x-3 p-3 bg-white rounded-lg border hover:border-primary cursor-pointer">
+                                    <input type="checkbox" id="collectName" class="w-5 h-5 text-primary rounded mt-0.5">
+                                    <div>
+                                        <span class="font-medium">Names</span>
+                                        <p class="text-xs text-gray-500">From signup forms, contact forms, or account profiles</p>
+                                    </div>
+                                </label>
+                                <label class="flex items-start space-x-3 p-3 bg-white rounded-lg border hover:border-primary cursor-pointer">
+                                    <input type="checkbox" id="collectEmail" checked class="w-5 h-5 text-primary rounded mt-0.5">
+                                    <div>
+                                        <span class="font-medium">Email addresses</span>
+                                        <p class="text-xs text-gray-500">Newsletter signups, contact forms, accounts, or order confirmations</p>
+                                    </div>
+                                </label>
+                                <label class="flex items-start space-x-3 p-3 bg-white rounded-lg border hover:border-primary cursor-pointer">
+                                    <input type="checkbox" id="collectPhone" class="w-5 h-5 text-primary rounded mt-0.5">
+                                    <div>
+                                        <span class="font-medium">Phone numbers</span>
+                                        <p class="text-xs text-gray-500">Contact forms, delivery info, or two-factor authentication</p>
+                                    </div>
+                                </label>
+                                <label class="flex items-start space-x-3 p-3 bg-white rounded-lg border hover:border-primary cursor-pointer">
+                                    <input type="checkbox" id="collectAddress" class="w-5 h-5 text-primary rounded mt-0.5">
+                                    <div>
+                                        <span class="font-medium">Physical addresses</span>
+                                        <p class="text-xs text-gray-500">Shipping info for e-commerce stores or billing addresses</p>
+                                    </div>
+                                </label>
+                                <label class="flex items-start space-x-3 p-3 bg-white rounded-lg border hover:border-primary cursor-pointer">
+                                    <input type="checkbox" id="collectPayment" class="w-5 h-5 text-primary rounded mt-0.5">
+                                    <div>
+                                        <span class="font-medium">Payment/billing information</span>
+                                        <p class="text-xs text-gray-500">Credit cards, PayPal, etc. (even if processed by Stripe/PayPal)</p>
+                                    </div>
+                                </label>
+                                <label class="flex items-start space-x-3 p-3 bg-white rounded-lg border hover:border-primary cursor-pointer">
+                                    <input type="checkbox" id="collectUsage" checked class="w-5 h-5 text-primary rounded mt-0.5">
+                                    <div>
+                                        <span class="font-medium">Usage data (pages visited, clicks, etc.)</span>
+                                        <p class="text-xs text-gray-500">If you use Google Analytics or any analytics tool, check this</p>
+                                    </div>
+                                </label>
+                                <label class="flex items-start space-x-3 p-3 bg-white rounded-lg border hover:border-primary cursor-pointer">
+                                    <input type="checkbox" id="collectDevice" class="w-5 h-5 text-primary rounded mt-0.5">
+                                    <div>
+                                        <span class="font-medium">Device information (IP, browser, OS)</span>
+                                        <p class="text-xs text-gray-500">Collected automatically by most web servers and analytics tools</p>
+                                    </div>
+                                </label>
+                                <label class="flex items-start space-x-3 p-3 bg-white rounded-lg border hover:border-primary cursor-pointer">
+                                    <input type="checkbox" id="collectLocation" class="w-5 h-5 text-primary rounded mt-0.5">
+                                    <div>
+                                        <span class="font-medium">Location data</span>
+                                        <p class="text-xs text-gray-500">GPS for mobile apps, or approximate location from IP address</p>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Cookies & Tracking -->
+                        <div id="step3" class="form-step hidden">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">The Cookie Question</h3><p class="text-gray-500 mb-4 text-sm">Most websites use cookies. Here is how to describe yours.</p>
+                            <div class="space-y-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-3">Does your site use cookies? (Most do!)</label>
+                                    <div class="flex space-x-4">
+                                        <label class="flex items-center space-x-2">
+                                            <input type="radio" name="useCookies" value="yes" checked class="w-4 h-4 text-primary">
+                                            <span>Yes</span>
+                                        </label>
+                                        <label class="flex items-center space-x-2">
+                                            <input type="radio" name="useCookies" value="no" class="w-4 h-4 text-primary">
+                                            <span>No</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div id="cookieTypes">
+                                    <label class="block text-sm font-medium text-gray-700 mb-3">What types of cookies do you use?</label>
+                                    <div class="space-y-3">
+                                        <label class="flex items-start space-x-3 p-3 bg-white rounded-lg border hover:border-primary cursor-pointer">
+                                            <input type="checkbox" id="cookieEssential" checked class="w-5 h-5 text-primary rounded mt-0.5">
+                                            <div>
+                                                <span class="font-medium">Essential cookies</span>
+                                                <p class="text-xs text-gray-500">Needed for your site to work (login sessions, shopping carts). Almost every site has these.</p>
+                                            </div>
+                                        </label>
+                                        <label class="flex items-start space-x-3 p-3 bg-white rounded-lg border hover:border-primary cursor-pointer">
+                                            <input type="checkbox" id="cookieAnalytics" class="w-5 h-5 text-primary rounded mt-0.5">
+                                            <div>
+                                                <span class="font-medium">Analytics cookies</span>
+                                                <p class="text-xs text-gray-500">Google Analytics, Plausible, or similar tools that track page views and user behavior</p>
+                                            </div>
+                                        </label>
+                                        <label class="flex items-start space-x-3 p-3 bg-white rounded-lg border hover:border-primary cursor-pointer">
+                                            <input type="checkbox" id="cookieMarketing" class="w-5 h-5 text-primary rounded mt-0.5">
+                                            <div>
+                                                <span class="font-medium">Marketing cookies</span>
+                                                <p class="text-xs text-gray-500">Facebook Pixel, Google Ads, or retargeting tools for advertising</p>
+                                            </div>
+                                        </label>
+                                        <label class="flex items-start space-x-3 p-3 bg-white rounded-lg border hover:border-primary cursor-pointer">
+                                            <input type="checkbox" id="cookieFunctional" class="w-5 h-5 text-primary rounded mt-0.5">
+                                            <div>
+                                                <span class="font-medium">Functional cookies</span>
+                                                <p class="text-xs text-gray-500">Remember user preferences like language, theme, or "remember me" checkboxes</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4: Third-Party Services -->
+                        <div id="step4" class="form-step hidden">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Tools You Use</h3>
+                            <p class="text-gray-600 mb-4">Do you use any of these popular services? Just check the ones that apply. This helps your visitors know where their data might go.</p>
+                            <!-- Analytics & Tracking -->
+                            <p class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Analytics & Tracking</p>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 mb-4">
+                                <label class="flex items-start space-x-3 p-3 min-h-[48px] bg-white rounded-lg border hover:border-primary active:bg-blue-50 cursor-pointer touch-manipulation">
+                                    <input type="checkbox" id="serviceGA" class="w-5 h-5 text-primary rounded mt-0.5">
+                                    <div>
+                                        <span class="font-medium">Google Analytics</span>
+                                        <p class="text-xs text-gray-500">Website traffic and visitor behavior</p>
+                                    </div>
+                                </label>
+                                <label class="flex items-start space-x-3 p-3 min-h-[48px] bg-white rounded-lg border hover:border-primary active:bg-blue-50 cursor-pointer touch-manipulation">
+                                    <input type="checkbox" id="serviceFB" class="w-5 h-5 text-primary rounded mt-0.5">
+                                    <div>
+                                        <span class="font-medium">Facebook Pixel</span>
+                                        <p class="text-xs text-gray-500">Ad tracking and retargeting</p>
+                                    </div>
+                                </label>
+                                <label class="flex items-start space-x-3 p-3 min-h-[48px] bg-white rounded-lg border hover:border-primary active:bg-blue-50 cursor-pointer touch-manipulation">
+                                    <input type="checkbox" id="serviceHotjar" class="w-5 h-5 text-primary rounded mt-0.5">
+                                    <div>
+                                        <span class="font-medium">Hotjar</span>
+                                        <p class="text-xs text-gray-500">Heatmaps and session recordings</p>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <!-- Payments -->
+                            <p class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Payments</p>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 mb-4">
+                                <label class="flex items-start space-x-3 p-3 min-h-[48px] bg-white rounded-lg border hover:border-primary active:bg-blue-50 cursor-pointer touch-manipulation">
+                                    <input type="checkbox" id="serviceStripe" class="w-5 h-5 text-primary rounded mt-0.5">
+                                    <div>
+                                        <span class="font-medium">Stripe</span>
+                                        <p class="text-xs text-gray-500">Credit card processing</p>
+                                    </div>
+                                </label>
+                                <label class="flex items-start space-x-3 p-3 min-h-[48px] bg-white rounded-lg border hover:border-primary active:bg-blue-50 cursor-pointer touch-manipulation">
+                                    <input type="checkbox" id="servicePaypal" class="w-5 h-5 text-primary rounded mt-0.5">
+                                    <div>
+                                        <span class="font-medium">PayPal</span>
+                                        <p class="text-xs text-gray-500">Online payments</p>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <!-- Email & Marketing -->
+                            <p class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Email & Marketing</p>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 mb-4">
+                                <label class="flex items-start space-x-3 p-3 min-h-[48px] bg-white rounded-lg border hover:border-primary active:bg-blue-50 cursor-pointer touch-manipulation">
+                                    <input type="checkbox" id="serviceMailchimp" class="w-5 h-5 text-primary rounded mt-0.5">
+                                    <div>
+                                        <span class="font-medium">Mailchimp</span>
+                                        <p class="text-xs text-gray-500">Email newsletters</p>
+                                    </div>
+                                </label>
+                                <label class="flex items-start space-x-3 p-3 min-h-[48px] bg-white rounded-lg border hover:border-primary active:bg-blue-50 cursor-pointer touch-manipulation">
+                                    <input type="checkbox" id="serviceSendgrid" class="w-5 h-5 text-primary rounded mt-0.5">
+                                    <div>
+                                        <span class="font-medium">SendGrid</span>
+                                        <p class="text-xs text-gray-500">Transactional emails</p>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <!-- Customer Support & Infrastructure -->
+                            <p class="text-xs font-medium text-gray-500 uppercase tracking-wide mb-2">Support & Infrastructure</p>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3">
+                                <label class="flex items-start space-x-3 p-3 min-h-[48px] bg-white rounded-lg border hover:border-primary active:bg-blue-50 cursor-pointer touch-manipulation">
+                                    <input type="checkbox" id="serviceIntercom" class="w-5 h-5 text-primary rounded mt-0.5">
+                                    <div>
+                                        <span class="font-medium">Intercom</span>
+                                        <p class="text-xs text-gray-500">Live chat support</p>
+                                    </div>
+                                </label>
+                                <label class="flex items-start space-x-3 p-3 min-h-[48px] bg-white rounded-lg border hover:border-primary active:bg-blue-50 cursor-pointer touch-manipulation">
+                                    <input type="checkbox" id="serviceZendesk" class="w-5 h-5 text-primary rounded mt-0.5">
+                                    <div>
+                                        <span class="font-medium">Zendesk</span>
+                                        <p class="text-xs text-gray-500">Help desk and tickets</p>
+                                    </div>
+                                </label>
+                                <label class="flex items-start space-x-3 p-3 min-h-[48px] bg-white rounded-lg border hover:border-primary active:bg-blue-50 cursor-pointer touch-manipulation">
+                                    <input type="checkbox" id="serviceAWS" class="w-5 h-5 text-primary rounded mt-0.5">
+                                    <div>
+                                        <span class="font-medium">AWS</span>
+                                        <p class="text-xs text-gray-500">Cloud hosting (Amazon)</p>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Step 5: Target Regions & Options -->
+                        <div id="step5" class="form-step hidden">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Almost Done! A Few More Details</h3>
+                            <div class="space-y-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-3">Where are your visitors from? Check all that apply.</label>
+                                    <div class="space-y-3">
+                                        <label class="flex items-center space-x-3 p-3 bg-white rounded-lg border hover:border-primary cursor-pointer">
+                                            <input type="checkbox" id="regionUSA" checked class="w-5 h-5 text-primary rounded">
+                                            <span>United States</span>
+                                        </label>
+                                        <label class="flex items-center space-x-3 p-3 bg-white rounded-lg border hover:border-primary cursor-pointer">
+                                            <input type="checkbox" id="regionEU" class="w-5 h-5 text-primary rounded">
+                                            <span>European Union (we will add GDPR language)</span>
+                                        </label>
+                                        <label class="flex items-center space-x-3 p-3 bg-white rounded-lg border hover:border-primary cursor-pointer">
+                                            <input type="checkbox" id="regionCA" class="w-5 h-5 text-primary rounded">
+                                            <span>California (we will add CCPA language)</span>
+                                        </label>
+                                        <label class="flex items-center space-x-3 p-3 bg-white rounded-lg border hover:border-primary cursor-pointer">
+                                            <input type="checkbox" id="regionUK" class="w-5 h-5 text-primary rounded">
+                                            <span>United Kingdom</span>
+                                        </label>
+                                        <label class="flex items-center space-x-3 p-3 bg-white rounded-lg border hover:border-primary cursor-pointer">
+                                            <input type="checkbox" id="regionGlobal" class="w-5 h-5 text-primary rounded">
+                                            <span>Worldwide</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-3">A few more things to check:</label>
+                                    <div class="space-y-3">
+                                        <label class="flex items-start space-x-3 p-3 bg-white rounded-lg border hover:border-primary cursor-pointer">
+                                            <input type="checkbox" id="optionChildren" class="w-5 h-5 text-primary rounded mt-0.5">
+                                            <div>
+                                                <span class="font-medium">We might have users under 13</span>
+                                                <p class="text-xs text-gray-500">Required for apps/games targeting kids. We will add COPPA protections.</p>
+                                            </div>
+                                        </label>
+                                        <label class="flex items-start space-x-3 p-3 bg-white rounded-lg border hover:border-primary cursor-pointer">
+                                            <input type="checkbox" id="optionNewsletter" class="w-5 h-5 text-primary rounded mt-0.5">
+                                            <div>
+                                                <span class="font-medium">We send marketing emails/newsletters</span>
+                                                <p class="text-xs text-gray-500">Mailchimp, ConvertKit, promotional emails, etc.</p>
+                                            </div>
+                                        </label>
+                                        <label class="flex items-start space-x-3 p-3 bg-white rounded-lg border hover:border-primary cursor-pointer">
+                                            <input type="checkbox" id="optionSellData" class="w-5 h-5 text-primary rounded mt-0.5">
+                                            <div>
+                                                <span class="font-medium">We sell or share data with third parties</span>
+                                                <p class="text-xs text-gray-500">Most businesses do NOT do this. If unsure, leave unchecked.</p>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+    <!-- Social Proof / Testimonials Section -->
+    <section class="py-16 bg-white border-t border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Trusted by 10,000+ Businesses Worldwide</h2>
+                <p class="text-gray-600">Here is what our customers have to say</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 rounded-xl p-6 border">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Saved me hours and probably thousands in legal fees. Had my privacy policy up in 10 minutes flat."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold">S</div>
+                        <div class="ml-3">
+                            <p class="font-semibold text-gray-900">Sarah M.</p>
+                            <p class="text-sm text-gray-500">E-commerce Owner</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 rounded-xl p-6 border">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"As a developer launching my SaaS, this was exactly what I needed. Professional and comprehensive."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white font-bold">J</div>
+                        <div class="ml-3">
+                            <p class="font-semibold text-gray-900">James K.</p>
+                            <p class="text-sm text-gray-500">SaaS Founder</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 rounded-xl p-6 border">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"The GDPR sections were perfect for my EU customers. Finally got compliant without the headache."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold">M</div>
+                        <div class="ml-3">
+                            <p class="font-semibold text-gray-900">Maria L.</p>
+                            <p class="text-sm text-gray-500">Blogger & Consultant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+                            </div>
+                        </div>
+
+                        <!-- Navigation Buttons -->
+                        <div class="flex flex-col-reverse sm:flex-row justify-between mt-8 gap-3 sm:gap-0">
+                            <button type="button" id="prevBtn" onclick="changeStep(-1)" class="hidden w-full sm:w-auto min-h-[48px] px-6 py-3 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-100 active:bg-gray-200 transition-colors touch-manipulation">
+                                Previous
+                            </button>
+                            <button type="button" id="nextBtn" onclick="changeStep(1)" class="w-full sm:w-auto sm:ml-auto min-h-[48px] px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary-dark active:bg-primary-dark transition-colors touch-manipulation">
+                                Next Step
+                            </button>
+                            <button type="button" id="generateBtn" onclick="generatePolicy()" class="hidden w-full sm:w-auto sm:ml-auto min-h-[48px] px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 active:bg-green-700 transition-colors touch-manipulation">
+                                Generate Policy
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Preview Section -->
+                <div class="bg-gray-50 rounded-2xl p-4 sm:p-8">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 sm:mb-6 gap-3">
+                        <h3 class="text-lg sm:text-xl font-semibold text-gray-900">Live Preview</h3>
+                        <div class="flex w-full sm:w-auto gap-2">
+                            <button id="copyBtn" onclick="copyToClipboard()" class="flex-1 sm:flex-none min-h-[44px] px-4 py-2 text-sm bg-white border border-gray-300 rounded-lg hover:bg-gray-50 active:bg-gray-100 transition-colors flex items-center justify-center gap-2 touch-manipulation" aria-label="Copy policy to clipboard">
+                                <svg class="w-5 h-5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                                </svg>
+                                <span>Copy</span>
+                            </button>
+                            <button id="downloadBtn" onclick="downloadPolicy()" class="flex-1 sm:flex-none min-h-[44px] px-4 py-2 text-sm bg-white border border-gray-300 rounded-lg hover:bg-gray-50 active:bg-gray-100 transition-colors flex items-center justify-center gap-2 touch-manipulation" aria-label="Download policy as text file">
+                                <svg class="w-5 h-5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                </svg>
+                                <span>TXT</span>
+                            </button>
+                            <button id="downloadPdfBtn" onclick="downloadPolicyPDF()" class="flex-1 sm:flex-none min-h-[44px] px-4 py-2 text-sm bg-primary text-white rounded-lg hover:bg-primary-dark active:bg-primary-dark transition-colors flex items-center justify-center gap-2 touch-manipulation" aria-label="Download policy as PDF">
+                                <svg class="w-5 h-5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                                </svg>
+                                <span>PDF</span>
+                            </button>
+                            <button id="downloadHtmlBtn" onclick="downloadPolicyHTML()" class="flex-1 sm:flex-none min-h-[44px] px-4 py-2 text-sm bg-green-600 text-white rounded-lg hover:bg-green-700 active:bg-green-700 transition-colors flex items-center justify-center gap-2 touch-manipulation" aria-label="Download policy as HTML">
+                                <svg class="w-5 h-5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                                </svg>
+                                <span>HTML</span>
+                            </button>
+                            <button id="emailBtn" onclick="emailPolicy()" class="flex-1 sm:flex-none min-h-[44px] px-4 py-2 text-sm bg-amber-500 text-white rounded-lg hover:bg-amber-600 active:bg-amber-600 transition-colors flex items-center justify-center gap-2 touch-manipulation" aria-label="Email policy to yourself">
+                                <svg class="w-5 h-5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                                <span>Email</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="policyPreview" class="bg-white rounded-lg p-4 sm:p-6 h-[400px] sm:h-[600px] overflow-y-auto border text-sm leading-relaxed overscroll-contain" tabindex="0" role="region" aria-label="Privacy policy preview">
+                        <p class="text-gray-500 text-center py-12 sm:py-20">Your privacy policy will appear here as you fill out the form. Watch it come together in real time!</p>
+                    </div>
+                    <!-- Mobile scroll indicator -->
+                    <p class="text-xs text-gray-400 text-center mt-2 sm:hidden" aria-hidden="true">Scroll to view full policy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Honest Pricing. No Surprises.</h2>
+                <p class="text-xl text-gray-600 mb-6">Try it free first. If you love it (we think you will), upgrade anytime.</p>
+                <!-- Billing Toggle -->
+                <div class="inline-flex items-center bg-white rounded-lg p-1 border shadow-sm">
+                    <button id="monthlyToggle" onclick="toggleBilling('monthly')" class="px-4 py-2 rounded-md text-sm font-medium bg-primary text-white transition-all">Monthly</button>
+                    <button id="annualToggle" onclick="toggleBilling('annual')" class="px-4 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-gray-900 transition-all">Annual <span class="text-green-600 font-semibold">(Save 33%)</span></button>
+                </div>
+            </div>
+
+            <!-- Lawyer Pricing Comparison -->
+            <div class="bg-gradient-to-r from-red-50 to-orange-50 border border-red-100 rounded-xl p-6 mb-12 max-w-3xl mx-auto">
+                <div class="flex items-center justify-center gap-6 flex-wrap">
+                    <div class="text-center">
+                        <p class="text-gray-500 text-sm mb-1">Hiring a Lawyer</p>
+                        <p class="text-2xl font-bold text-red-600 line-through">$500 - $2,000</p>
+                    </div>
+                    <div class="text-3xl text-gray-300">vs</div>
+                    <div class="text-center">
+                        <p class="text-gray-500 text-sm mb-1">PrivacyPolicyGen</p>
+                        <p class="text-2xl font-bold text-green-600">Starting at $0</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Free Plan -->
+                <div class="bg-white rounded-2xl shadow-sm border-2 border-gray-200 p-8">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Free</h3>
+                    <p class="text-gray-600 mb-6">Great for testing the waters</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-bold text-gray-900">$0</span>
+                        <span class="text-gray-600">/forever</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>1 policy per month</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Privacy Policy template</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Download as TXT</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>GDPR & CCPA compliant</span>
+                        </li>
+                        <li class="flex items-center space-x-3 text-gray-400">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Terms of Service</span>
+                        </li>
+                    </ul>
+                    <button onclick="scrollToGenerator()" class="w-full py-3 border-2 border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-white transition-colors">
+                        Get Started Free
+                    </button>
+                </div>
+                <!-- Pro Plan -->
+                <div class="bg-white rounded-2xl shadow-xl border-2 border-primary p-8 relative transform md:scale-105 hover:shadow-2xl transition-all">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-primary text-white text-xs px-4 py-1.5 rounded-full font-semibold shadow-lg">MOST POPULAR</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2 mt-2">Pro</h3>
+                    <p class="text-gray-600 mb-6">For busy business owners</p>
+                    <div class="mb-2">
+                        <span id="proPrice" class="text-4xl font-bold text-gray-900">$15</span>
+                        <span id="proPeriod" class="text-gray-600">/month</span>
+                    </div>
+                    <p id="proSavings" class="text-sm text-green-600 font-medium mb-4 h-5"></p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span><strong>Unlimited</strong> policies</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Privacy Policy + Terms</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Cookie Policy included</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>HTML & TXT downloads</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Priority support</span>
+                        </li>
+                    </ul>
+                    <button class="w-full py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary-dark transition-colors shadow-lg" onclick="handleProUpgrade('monthly')" data-plan="monthly">
+                        Start 7-Day Free Trial
+                    </button>
+                    <p class="text-xs text-gray-500 text-center mt-3">No credit card required</p>
+                </div>
+                <!-- Lifetime Plan -->
+                <div class="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl shadow-sm border-2 border-amber-200 p-8 relative hover:shadow-lg transition-shadow">
+                    <div class="absolute -top-3 right-4">
+                        <span class="bg-gradient-to-r from-amber-500 to-orange-500 text-white text-xs px-3 py-1 rounded-full font-semibold">BEST VALUE</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2 mt-2">Lifetime</h3>
+                    <p class="text-gray-600 mb-6">Pay once, use forever</p>
+                    <div class="mb-2">
+                        <span class="text-lg text-gray-400 line-through">$199</span>
+                        <span class="text-4xl font-bold text-gray-900 ml-2">$79</span>
+                        <span class="text-gray-600">/once</span>
+                    </div>
+                    <p class="text-sm text-amber-600 font-medium mb-4">Save $120 - Limited time offer</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Everything in Pro</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span><strong>Lifetime</strong> access</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Every new template we create</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>White-label option</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Never pay again, ever</span>
+                        </li>
+                    </ul>
+                    <button class="w-full py-3 bg-gradient-to-r from-amber-500 to-orange-500 text-white rounded-lg font-semibold hover:from-amber-600 hover:to-orange-600 transition-all shadow-lg" onclick="handleProUpgrade('lifetime')" data-plan="lifetime">
+                        Get Lifetime Access
+                    </button>
+                </div>
+            </div>
+
+            <!-- Money-back Guarantee -->
+            <div class="text-center mt-12">
+                <div class="inline-flex items-center space-x-2 bg-green-50 text-green-700 px-6 py-3 rounded-full border border-green-200">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    <span class="font-semibold">30-Day Money-Back Guarantee</span>
+                    <span class="text-green-600">- No questions asked</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Got Questions? We Have Answers.</h2>
+                <p class="text-xl text-gray-600">We get it, legal stuff can be confusing. Here are the questions we hear most often.</p>
+            </div>
+            <div class="space-y-4">
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center" onclick="toggleFaq(this)">
+                        <span class="font-semibold text-gray-900">Is the generated privacy policy legally binding?</span>
+                        <svg class="w-5 h-5 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-600">
+                        <p>Great question! Our templates give you a solid, professional foundation based on widely accepted legal standards. They cover GDPR, CCPA, and other major frameworks. For most small businesses and startups, this is exactly what you need. If you have complex data practices or want extra peace of mind, having a lawyer give it a quick review is always a good idea, but you are already way ahead of those who have no policy at all.</p>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center" onclick="toggleFaq(this)">
+                        <span class="font-semibold text-gray-900">What's the difference between GDPR and CCPA?</span>
+                        <svg class="w-5 h-5 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-600">
+                        <p>Here is the simple version: GDPR is for Europe, CCPA is for California. Both give people more control over their personal data. If your website or app might have visitors from Europe or California (and most websites do!), you want to cover both. The good news? Our generator handles this automatically. Just tell us which regions you serve, and we include the right language.</p>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center" onclick="toggleFaq(this)">
+                        <span class="font-semibold text-gray-900">Can I edit the privacy policy after generating it?</span>
+                        <svg class="w-5 h-5 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-600">
+                        <p>Absolutely! Your policy is yours to keep and customize. Once you download or copy it, feel free to tweak the wording or add specifics about your business. Just be careful not to remove the core legal sections. Think of our template as the strong foundation, and you can paint the walls however you like.</p>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center" onclick="toggleFaq(this)">
+                        <span class="font-semibold text-gray-900">How often should I update my privacy policy?</span>
+                        <svg class="w-5 h-5 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-600">
+                        <p>Good rule of thumb: update it whenever your data practices change. Adding a new analytics tool? Update. Expanding to Europe? Update. Started selling products? Update. Beyond that, a quick annual review is smart. Set a calendar reminder once a year to make sure everything still matches what you actually do.</p>
+                    </div>
+                </div>
+                <div class="border border-gray-200 rounded-lg">
+                    <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center" onclick="toggleFaq(this)">
+                        <span class="font-semibold text-gray-900">Do I need a privacy policy for my blog?</span>
+                        <svg class="w-5 h-5 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-600">
+                        <p>Yes, even bloggers need one! If you use Google Analytics, have a contact form, collect emails for a newsletter, or allow comments, you are collecting personal data. Plus, most ad networks and affiliate programs require a privacy policy before they will work with you. The good news? Our free tier is perfect for bloggers, and it takes just a few minutes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO-Optimized Extended FAQ Section -->
+    <section id="extended-faq" class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Everything You Need to Know About Privacy Policies</h2>
+                <p class="text-xl text-gray-600">Comprehensive answers to help you understand privacy compliance for your website, app, or online business.</p>
+            </div>
+
+            <!-- Free Privacy Policy Generator FAQ -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                    <span class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">1</span>
+                    Free Privacy Policy Generator
+                </h3>
+                <div class="space-y-4">
+                    <div class="bg-white border border-gray-200 rounded-lg">
+                        <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center" onclick="toggleFaq(this)">
+                            <span class="font-semibold text-gray-900">What is the best free privacy policy generator?</span>
+                            <svg class="w-5 h-5 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-4 text-gray-600">
+                            <p>PrivacyPolicyGen is one of the best free privacy policy generators available. Unlike many free tools that offer outdated templates or limited functionality, our generator creates comprehensive, legally-compliant policies covering GDPR, CCPA, and other major privacy frameworks. The free tier includes one policy per month, which is perfect for individual websites, blogs, and small projects. Our templates are reviewed by legal professionals and updated regularly to reflect the latest privacy law changes.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg">
+                        <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center" onclick="toggleFaq(this)">
+                            <span class="font-semibold text-gray-900">Are free privacy policy generators safe to use?</span>
+                            <svg class="w-5 h-5 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-4 text-gray-600">
+                            <p>Yes, reputable free privacy policy generators like PrivacyPolicyGen are safe to use. We do not store your business information on our servers - everything is generated client-side in your browser. Your data never leaves your device. The key is choosing a generator that produces customized policies (not just generic templates), covers current privacy regulations, and is regularly maintained.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg">
+                        <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center" onclick="toggleFaq(this)">
+                            <span class="font-semibold text-gray-900">How do I create a privacy policy for my website for free?</span>
+                            <svg class="w-5 h-5 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-4 text-gray-600">
+                            <p>Creating a free privacy policy for your website takes just 5 minutes with our generator. Simply: (1) Enter your website name and contact information, (2) Select what personal data you collect (emails, names, payment info, etc.), (3) Choose which cookies and third-party services you use (Google Analytics, Facebook Pixel, Stripe, etc.), (4) Select your target regions (US, EU for GDPR, California for CCPA), and (5) Generate and download your policy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GDPR Privacy Policy FAQ -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                    <span class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">2</span>
+                    GDPR Privacy Policy Template
+                </h3>
+                <div class="space-y-4">
+                    <div class="bg-white border border-gray-200 rounded-lg">
+                        <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center" onclick="toggleFaq(this)">
+                            <span class="font-semibold text-gray-900">What must a GDPR-compliant privacy policy include?</span>
+                            <svg class="w-5 h-5 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-4 text-gray-600">
+                            <p>A GDPR-compliant privacy policy must include: (1) Identity and contact details of the data controller, (2) Types of personal data collected, (3) Legal basis for processing, (4) How long data is retained, (5) Third parties with whom data is shared, (6) Users' rights (access, rectification, erasure, portability, objection), (7) Information about international data transfers, (8) Right to lodge complaints with supervisory authorities, and (9) Cookie and tracking information.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg">
+                        <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center" onclick="toggleFaq(this)">
+                            <span class="font-semibold text-gray-900">Do I need a GDPR privacy policy if I am not based in Europe?</span>
+                            <svg class="w-5 h-5 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-4 text-gray-600">
+                            <p>Yes, if you have any visitors or customers from the European Union, you likely need a GDPR-compliant privacy policy. GDPR applies to any business that collects data from EU residents, regardless of where the business is located. The fines for non-compliance can be significant (up to 4% of annual revenue), so it is better to be safe.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CCPA Privacy Policy FAQ -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                    <span class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">3</span>
+                    CCPA Compliant Privacy Policy
+                </h3>
+                <div class="space-y-4">
+                    <div class="bg-white border border-gray-200 rounded-lg">
+                        <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center" onclick="toggleFaq(this)">
+                            <span class="font-semibold text-gray-900">What is CCPA and who does it apply to?</span>
+                            <svg class="w-5 h-5 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-4 text-gray-600">
+                            <p>The California Consumer Privacy Act (CCPA) is a state privacy law that gives California residents rights over their personal information. It applies to businesses that: (1) Have annual gross revenues over $25 million, OR (2) Buy, sell, or share personal information of 50,000+ consumers annually, OR (3) Derive 50% or more of annual revenue from selling consumers' personal information.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg">
+                        <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center" onclick="toggleFaq(this)">
+                            <span class="font-semibold text-gray-900">What rights do California consumers have under CCPA?</span>
+                            <svg class="w-5 h-5 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-4 text-gray-600">
+                            <p>CCPA grants California consumers several important rights: (1) Right to Know - what personal information is collected and how it is used, (2) Right to Delete - request deletion of personal information, (3) Right to Opt-Out - stop the sale of personal information, (4) Right to Non-Discrimination - businesses cannot penalize consumers for exercising their rights.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Privacy Policy for Website/App FAQ -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                    <span class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold mr-3">4</span>
+                    Privacy Policy for Website & App
+                </h3>
+                <div class="space-y-4">
+                    <div class="bg-white border border-gray-200 rounded-lg">
+                        <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center" onclick="toggleFaq(this)">
+                            <span class="font-semibold text-gray-900">Does every website need a privacy policy?</span>
+                            <svg class="w-5 h-5 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-4 text-gray-600">
+                            <p>Practically speaking, yes. If your website uses cookies, has a contact form, uses any analytics (like Google Analytics), has user accounts, collects emails, processes payments, or has any interactive features, you need a privacy policy. This covers almost every website on the internet.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg">
+                        <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center" onclick="toggleFaq(this)">
+                            <span class="font-semibold text-gray-900">Do I need a privacy policy for my mobile app?</span>
+                            <svg class="w-5 h-5 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-4 text-gray-600">
+                            <p>Yes, absolutely. Both Apple's App Store and Google Play Store require a privacy policy for all apps that collect any user data. This is mandatory for app submission and approval. Many app rejections are due to missing or inadequate privacy policies.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white border border-gray-200 rounded-lg">
+                        <button class="faq-toggle w-full px-6 py-4 text-left flex justify-between items-center" onclick="toggleFaq(this)">
+                            <span class="font-semibold text-gray-900">Where should I put my privacy policy on my website?</span>
+                            <svg class="w-5 h-5 text-gray-500 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-4 text-gray-600">
+                            <p>Your privacy policy should be easily accessible from every page of your website. The standard practice is to include a link in your website footer that appears on all pages. You should also link to it near any forms that collect personal information.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Law Education Section -->
+    <section id="privacy-laws" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Understanding Privacy Laws</h2>
+                <p class="text-xl text-gray-600">Quick guides to the most important privacy regulations affecting your business.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- GDPR Card -->
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-8 border border-blue-100 hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <span class="text-3xl mr-3">EU</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900">GDPR</h3>
+                            <p class="text-sm text-gray-600">General Data Protection Regulation</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">The European Union's comprehensive privacy law that protects EU residents' personal data.</p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-4">
+                        <li class="flex items-start"><svg class="w-4 h-4 text-blue-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Right to be forgotten</li>
+                        <li class="flex items-start"><svg class="w-4 h-4 text-blue-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>72-hour breach notification</li>
+                        <li class="flex items-start"><svg class="w-4 h-4 text-blue-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Fines up to 4% of revenue</li>
+                    </ul>
+                    <a href="#generator" class="text-primary font-semibold hover:underline">Generate GDPR-compliant policy</a>
+                </div>
+
+                <!-- CCPA Card -->
+                <div class="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-8 border border-amber-100 hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <span class="text-3xl mr-3">CA</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900">CCPA/CPRA</h3>
+                            <p class="text-sm text-gray-600">California Consumer Privacy Act</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">California's landmark privacy law giving residents control over their personal information.</p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-4">
+                        <li class="flex items-start"><svg class="w-4 h-4 text-amber-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Right to know what data is collected</li>
+                        <li class="flex items-start"><svg class="w-4 h-4 text-amber-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Do Not Sell My Info opt-out</li>
+                        <li class="flex items-start"><svg class="w-4 h-4 text-amber-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Non-discrimination for opt-outs</li>
+                    </ul>
+                    <a href="#generator" class="text-primary font-semibold hover:underline">Generate CCPA-compliant policy</a>
+                </div>
+
+                <!-- COPPA Card -->
+                <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-8 border border-green-100 hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <span class="text-3xl mr-3">13+</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900">COPPA</h3>
+                            <p class="text-sm text-gray-600">Children's Online Privacy Protection</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">US federal law protecting children under 13 online. Required for kid-focused apps and sites.</p>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-4">
+                        <li class="flex items-start"><svg class="w-4 h-4 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Parental consent required</li>
+                        <li class="flex items-start"><svg class="w-4 h-4 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Limits on data collection</li>
+                        <li class="flex items-start"><svg class="w-4 h-4 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>FTC enforcement with penalties</li>
+                    </ul>
+                    <a href="#generator" class="text-primary font-semibold hover:underline">Generate COPPA-compliant policy</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry-Specific Examples Section (Backlink Bait) -->
+    <section id="examples" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Privacy Policy Examples by Industry</h2>
+                <p class="text-xl text-gray-600">See what a professional privacy policy looks like for your type of business. Free to reference and share.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- E-commerce -->
+                <div class="bg-white rounded-xl p-6 border hover:shadow-lg transition-shadow cursor-pointer" onclick="scrollToGenerator(); document.getElementById('businessType').value='ecommerce';">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-2">E-commerce Store</h3>
+                    <p class="text-sm text-gray-600 mb-3">Payment processing, shipping addresses, order history, customer accounts.</p>
+                    <span class="text-primary text-sm font-semibold">Generate example</span>
+                </div>
+
+                <!-- SaaS -->
+                <div class="bg-white rounded-xl p-6 border hover:shadow-lg transition-shadow cursor-pointer" onclick="scrollToGenerator(); document.getElementById('businessType').value='saas';">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-2">SaaS / Startup</h3>
+                    <p class="text-sm text-gray-600 mb-3">User accounts, subscription billing, usage analytics, integrations.</p>
+                    <span class="text-primary text-sm font-semibold">Generate example</span>
+                </div>
+
+                <!-- Mobile App -->
+                <div class="bg-white rounded-xl p-6 border hover:shadow-lg transition-shadow cursor-pointer" onclick="scrollToGenerator(); document.getElementById('businessType').value='mobileapp';">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-2">Mobile App</h3>
+                    <p class="text-sm text-gray-600 mb-3">Device info, push notifications, location data, in-app purchases.</p>
+                    <span class="text-primary text-sm font-semibold">Generate example</span>
+                </div>
+
+                <!-- Blog -->
+                <div class="bg-white rounded-xl p-6 border hover:shadow-lg transition-shadow cursor-pointer" onclick="scrollToGenerator(); document.getElementById('businessType').value='blog';">
+                    <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-2">Blog / Content Site</h3>
+                    <p class="text-sm text-gray-600 mb-3">Newsletter signups, comments, analytics, advertising (AdSense).</p>
+                    <span class="text-primary text-sm font-semibold">Generate example</span>
+                </div>
+
+                <!-- Web App -->
+                <div class="bg-white rounded-xl p-6 border hover:shadow-lg transition-shadow cursor-pointer" onclick="scrollToGenerator(); document.getElementById('businessType').value='webapp';">
+                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-2">Web Application</h3>
+                    <p class="text-sm text-gray-600 mb-3">User authentication, data storage, API integrations, file uploads.</p>
+                    <span class="text-primary text-sm font-semibold">Generate example</span>
+                </div>
+
+                <!-- Business Website -->
+                <div class="bg-white rounded-xl p-6 border hover:shadow-lg transition-shadow cursor-pointer" onclick="scrollToGenerator(); document.getElementById('businessType').value='website';">
+                    <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-2">Business Website</h3>
+                    <p class="text-sm text-gray-600 mb-3">Contact forms, newsletter, analytics, lead generation forms.</p>
+                    <span class="text-primary text-sm font-semibold">Generate example</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Built for Startups Section -->
+    <section id="startups" class="py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="inline-block bg-primary/20 text-primary-light px-4 py-1 rounded-full text-sm font-semibold mb-4">BUILT FOR BUILDERS</span>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Trusted by Indie Hackers, Startups & Bootstrappers</h2>
+                    <p class="text-gray-300 text-lg mb-8">We know you are focused on building your product, not wrestling with legal documents. That is why we built the fastest, simplest privacy policy generator for modern startups.</p>
+
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-6 h-6 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            <span>Ready for App Store & Play Store submissions</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-6 h-6 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            <span>Investor-ready compliance documentation</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-6 h-6 text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            <span>Y Combinator & accelerator friendly</span>
+                        </div>
+                    </div>
+
+                    <button onclick="scrollToGenerator()" class="bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary-dark transition-colors">
+                        Create Your Policy in 5 Minutes
+                    </button>
+                </div>
+
+                <!-- Share / Community Section -->
+                <div class="bg-white/5 backdrop-blur rounded-2xl p-8 border border-white/10">
+                    <h3 class="text-xl font-bold mb-6">Share with your community</h3>
+
+                    <!-- Product Hunt Ready -->
+                    <div class="bg-white/10 rounded-xl p-4 mb-4">
+                        <div class="flex items-center mb-3">
+                            <svg class="w-8 h-8 text-orange-400 mr-3" viewBox="0 0 40 40" fill="currentColor"><path d="M22.667 20H17.5v-6.667h5.167a3.333 3.333 0 110 6.667zM20 0C8.954 0 0 8.954 0 20s8.954 20 20 20 20-8.954 20-20S31.046 0 20 0zm2.667 26.667H17.5V30h-4.167V10H22.667a7.5 7.5 0 110 16.667z"/></svg>
+                            <div>
+                                <p class="font-semibold">Product Hunt</p>
+                                <p class="text-sm text-gray-400">Ready for launch day</p>
+                            </div>
+                        </div>
+                        <button onclick="shareProductHunt()" class="w-full bg-orange-500 hover:bg-orange-600 text-white py-2 rounded-lg font-medium transition-colors">
+                            Prepare Launch Post
+                        </button>
+                    </div>
+
+                    <!-- Indie Hackers -->
+                    <div class="bg-white/10 rounded-xl p-4 mb-4">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 bg-blue-500 rounded mr-3 flex items-center justify-center font-bold text-sm">IH</div>
+                            <div>
+                                <p class="font-semibold">Indie Hackers</p>
+                                <p class="text-sm text-gray-400">Share your stack</p>
+                            </div>
+                        </div>
+                        <button onclick="shareIndieHackers()" class="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg font-medium transition-colors">
+                            Copy Share Text
+                        </button>
+                    </div>
+
+                    <!-- Twitter/X -->
+                    <div class="bg-white/10 rounded-xl p-4">
+                        <div class="flex items-center mb-3">
+                            <svg class="w-8 h-8 text-gray-300 mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                            <div>
+                                <p class="font-semibold">Twitter / X</p>
+                                <p class="text-sm text-gray-400">Share with founders</p>
+                            </div>
+                        </div>
+                        <button onclick="shareTwitter()" class="w-full bg-gray-700 hover:bg-gray-600 text-white py-2 rounded-lg font-medium transition-colors">
+                            Tweet About Us
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Tools Section (Backlink Bait) -->
+    <section id="free-tools" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Free Privacy Compliance Tools</h2>
+                <p class="text-xl text-gray-600">More free resources to help you stay compliant. Bookmark and share with your team.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Compliance Checker -->
+                <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-8 border border-green-200">
+                    <div class="w-14 h-14 bg-green-500 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Privacy Policy Compliance Checker</h3>
+                    <p class="text-gray-600 mb-4">Analyze any privacy policy URL and get a compliance score with recommendations.</p>
+                    <span class="inline-block bg-green-100 text-green-700 text-sm font-semibold px-3 py-1 rounded-full mb-4">Coming Soon</span>
+                    <button class="w-full bg-green-500 text-white py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors" onclick="showComingSoonToast('Compliance Checker')">
+                        Get Notified When Ready
+                    </button>
+                </div>
+
+                <!-- GDPR Checklist -->
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-8 border border-blue-200">
+                    <div class="w-14 h-14 bg-primary rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Free GDPR Compliance Checklist</h3>
+                    <p class="text-gray-600 mb-4">47-point checklist covering everything you need to be GDPR compliant.</p>
+                    <span class="inline-block bg-blue-100 text-blue-700 text-sm font-semibold px-3 py-1 rounded-full mb-4">Free Download</span>
+                    <button class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-primary-dark transition-colors" onclick="showEmailCapture('gdpr-checklist')">
+                        Download Free Checklist
+                    </button>
+                </div>
+
+                <!-- Compliance Badge -->
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-8 border border-purple-200">
+                    <div class="w-14 h-14 bg-purple-500 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Embeddable Compliance Badges</h3>
+                    <p class="text-gray-600 mb-4">Add trust badges to your website showing GDPR and CCPA compliance.</p>
+                    <span class="inline-block bg-purple-100 text-purple-700 text-sm font-semibold px-3 py-1 rounded-full mb-4">Free</span>
+                    <button class="w-full bg-purple-500 text-white py-3 rounded-lg font-semibold hover:bg-purple-600 transition-colors" onclick="showBadgeModal()">
+                        Get Free Badges
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Email Capture / Newsletter Section -->
+    <section id="newsletter" class="py-16 bg-gradient-to-r from-primary to-primary-dark">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl p-8 md:p-12 shadow-2xl">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Stay Ahead of Privacy Law Changes</h2>
+                        <p class="text-gray-600 mb-4">Get notified when privacy laws change and your policy needs updating.</p>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li class="flex items-center"><svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Privacy law update alerts</li>
+                            <li class="flex items-center"><svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Free GDPR checklist download</li>
+                            <li class="flex items-center"><svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Compliance tips & best practices</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <form onsubmit="handleNewsletterSignup(event)" class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Email address</label>
+                                <input type="email" id="newsletterEmail" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="you@company.com">
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-primary-dark transition-colors">
+                                Get Privacy Updates (Free)
+                            </button>
+                            <p class="text-xs text-gray-500 text-center">Join 12,000+ founders staying compliant. Unsubscribe anytime.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Lawyers / White-Label Section -->
+    <section id="lawyers" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="inline-block bg-purple-100 text-purple-700 px-4 py-1 rounded-full text-sm font-semibold mb-4">FOR PROFESSIONALS</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">White-Label for Lawyers & Consultants</h2>
+                    <p class="text-gray-600 text-lg mb-6">Offer privacy policy generation to your clients under your own brand. Perfect for law firms, web agencies, and business consultants.</p>
+
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-6 h-6 text-primary mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            <div>
+                                <p class="font-semibold text-gray-900">Your branding, your clients</p>
+                                <p class="text-sm text-gray-600">Remove all PrivacyPolicyGen branding. Use your logo and colors.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-6 h-6 text-primary mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                            <div>
+                                <p class="font-semibold text-gray-900">30% affiliate commission</p>
+                                <p class="text-sm text-gray-600">Earn recurring revenue by referring clients who need privacy policies.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="mailto:partners@privacypolicygen.io?subject=White-Label Partnership Inquiry" class="inline-flex items-center justify-center bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-dark transition-colors">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                            Contact for Partnership
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Partner Benefits -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6">Partner Benefits</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                            <div>
+                                <p class="font-semibold text-gray-900">Affiliate Program</p>
+                                <p class="text-sm text-gray-600">Earn on every referral</p>
+                            </div>
+                            <span class="text-2xl font-bold text-primary">30%</span>
+                        </div>
+                        <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                            <div>
+                                <p class="font-semibold text-gray-900">White-Label License</p>
+                                <p class="text-sm text-gray-600">Unlimited client policies</p>
+                            </div>
+                            <span class="text-2xl font-bold text-primary">$49/mo</span>
+                        </div>
+                        <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                            <div>
+                                <p class="font-semibold text-gray-900">Agency Plan</p>
+                                <p class="text-sm text-gray-600">5 team seats included</p>
+                            </div>
+                            <span class="text-2xl font-bold text-primary">$99/mo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-primary py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Check Privacy Off Your To-Do List?</h2>
+            <p class="text-xl text-blue-100 mb-8">Your visitors will thank you, and so will your peace of mind. Takes just 5 minutes.</p>
+            <button onclick="scrollToGenerator()" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors shadow-lg">
+                Create Your Policy Now
+            </button>
+        </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+                        </svg>
+                        <span class="text-xl font-bold text-white">PrivacyPolicyGen</span>
+                    </div>
+                    <p class="text-sm">Making privacy compliance simple, one policy at a time. Built with care for busy builders like you.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Product</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#features" class="hover:text-white transition-colors">Features</a></li>
+                        <li><a href="#pricing" class="hover:text-white transition-colors">Pricing</a></li>
+                        <li><a href="#generator" class="hover:text-white transition-colors">Generator</a></li>
+                        <li><a href="#examples" class="hover:text-white transition-colors">Policy Examples</a></li>
+                        <li><a href="#free-tools" class="hover:text-white transition-colors">Free Tools</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#extended-faq" class="hover:text-white transition-colors">Privacy Policy FAQ</a></li>
+                        <li><a href="#privacy-laws" class="hover:text-white transition-colors">Privacy Law Guides</a></li>
+                        <li><a href="#faq" class="hover:text-white transition-colors">General FAQ</a></li>
+                        <li><a href="#lawyers" class="hover:text-white transition-colors">For Lawyers</a></li>
+                        <li><a href="#newsletter" class="hover:text-white transition-colors">Newsletter</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Connect</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="mailto:support@privacypolicygen.io" class="hover:text-white transition-colors">support@privacypolicygen.io</a></li>
+                        <li><a href="mailto:partners@privacypolicygen.io" class="hover:text-white transition-colors">Partner With Us</a></li>
+                        <li><a href="#" onclick="shareTwitter(); return false;" class="hover:text-white transition-colors">Twitter / X</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-sm text-center">
+                <p>&copy; 2024 PrivacyPolicyGen. All rights reserved. Made with care (and plenty of coffee).</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification (ARIA live region for screen readers) -->
+    <div id="toast" class="fixed bottom-20 sm:bottom-4 left-4 right-4 sm:left-auto sm:right-4 sm:w-auto bg-gray-900 text-white px-6 py-3 rounded-lg shadow-lg transform translate-y-20 opacity-0 transition-all duration-300 text-center sm:text-left z-50" role="alert" aria-live="assertive" aria-atomic="true">
+        <span id="toastMessage"></span>
+    </div>
+
+    <!-- Stripe.js for payment processing -->
+    <script src="https://js.stripe.com/v3/" defer></script>
+    <!-- Secure Storage and Privacy Controls -->
+    <script src="secure-storage.js"></script>
+    <script src="privacy-controls.js"></script>
+    <script src="analytics.js"></script>
+    <script src="app.js"></script>
+    <script src="checkout.js"></script>
+    <script src="accessibility.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+﻿*.bak
+*.backup
+*.original
+*.security-backup
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.env
+.env.local
+node_modules/
